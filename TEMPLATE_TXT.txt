@@ -215,11 +215,11 @@
     <div class="progress-bar"></div>
 </div>
 <br><br>
-    <footer><small ><h5>© Elaborado por  IRAÊ CÉSAR BRANDÃO baeando-se em pesquisas 
-<br>
+    <footer><small ><h5>© Elaborado por  IRAÊ CÉSAR BRANDÃO baseando-se em pesquisas 
+   <br>
      <a href="https://luckwayinformatica.business.site"  target="_blank">Luck Way Informática</a>
-</small>
-</footer>
+            </small>
+   </footer>
     </div>
 </div>
 </body>
