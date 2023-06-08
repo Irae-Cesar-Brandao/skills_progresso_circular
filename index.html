@@ -12,27 +12,42 @@
 <!-- AQUI INICIAMOS A ESTILIZAÇÃO EM CSS-->
 
 <style>
-     /* Aplicar propriedades CSS ao elemento h1 */
-        h5 {
+
+       /* Estilizando e transformando a fonte h1  */
+       h1 {
+           font-size: 30px;
+           color: white;
+           text-align: justify;
+       }
+
+
+     /* Aplicar propriedades CSS ao elemento h7 */
+        h7 {
             text-align: center;
             color: green;
             font-family: arial;
             font-weight: 100;
-            font-size: 1em;
+            font-size: 15px;
         }
-
 
        /* Estilizando e transformando a fonte h2 do título */
        h2 {
            color: white;
+          text-align: center;
            font-family: "Yellowtail", cursive;
            font-weight: 100;
            font-size: 4em;
            transform: translatey(-10px) rotatez(-5deg);
            text-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px black, 0 0 15px black;
-            animation: hover 1s ease-in-out infinite;
      }
     
+      h6 {
+           font-size: 20px;
+           color: white;
+           text-align: justify;
+     }
+
+
      body{
           background-color: black;
         }
@@ -41,7 +56,7 @@
                 propriedades CSS */
         .container {
               top: 180%;
-              left: 50%;
+              left: 60%;
               position: absolute;
               text-align: center;
               transform: translate(-60%, -90%);
@@ -66,7 +81,7 @@
               box-sizing: border-box;
         }
   
-        /* Aplicar propriedades css ao id child 2 (filho 2)JS */
+        /* Aplicar propriedades css ao id child 2 (filho 2) JS */
        #child2 {
               border-top-color: black;
               border-right-color: black;
@@ -74,7 +89,7 @@
               border-bottom-color: palegreen;
         }
        
-        /*Aplicar ao id child 3(filho 3)PYTHONda classe ui-widgets */
+        /*Aplicar ao id child 3(filho 3)PYTHON da classe ui-widgets */
        #child3 {
               border-top-color: black;
               border-right-color: green;
@@ -82,7 +97,7 @@
               border-bottom-color: palegreen;
         }
 
-        /*Aplicar ao id child 4(filho 4)C# da classe ui-widgets */
+        /*Aplicar ao id child 4(filho 4) C# da classe ui-widgets */
            #child4 {
               border-top-color: black;
               border-right-color:black;
@@ -95,6 +110,42 @@
               border-top-color: black;
               border-top-color: darkgreen;
               border-right-color: chartreuse;
+              border-left-color: chartreuse;
+              border-bottom-color: palegreen;
+   }
+
+        /*Aplicar ao id child 6(filho 6)BIG DATA da classe ui-widgets */
+           #child6 {
+              border-top-color: black;
+              border-top-color: black;
+              border-right-color: chartreuse;
+              border-left-color: chartreuse;
+              border-bottom-color: palegreen;
+   }
+
+        /*Aplicar ao id child 7(filho 7)MYSQLda classe ui-widgets */
+           #child7 {
+              border-top-color: black;
+              border-top-color: black;
+              border-right-color: chartreuse;
+              border-left-color: chartreuse;
+              border-bottom-color: palegreen;
+   }
+
+        /*Aplicar ao id child 8(filho 8)GESTÃO DE TI da classe ui-widgets */
+           #child8 {
+              border-top-color: black;
+              border-top-color: green;
+              border-right-color: chartreuse;
+              border-left-color: chartreuse;
+              border-bottom-color: palegreen;
+   }
+
+        /*Aplicar ao id child 9(filho 9)GESTÃO DE TI da classe ui-widgets */
+           #child9 {
+              border-top-color: black;
+              border-top-color: black;
+              border-right-color: chartreuse;;
               border-left-color: chartreuse;
               border-bottom-color: palegreen;
    }
@@ -122,32 +173,37 @@
               bottom: -16px;
               text-shadow: 0 0 4px grey;
               color: black;
+              font-weight: bold;
               position: absolute;
               width: 100%;
               font-size: 16px;
         }
 
-
+     /* Barras superior e inferior - container*/
      .container {
             height: 30px;
-            background-color: yellow;
+            background-color: white;
             position: relative;
       }
 
-
+    
    /* Aqui criando as animações do container
-              e keyframes da barra de progress*/
+              e keyframes da barra de progresso e tempo em segundos*/
      .container .progress-bar{
            position: absolute;
            height: 100%;
-           background-color: #0fd439;
+           background-color: blue;
            animation: progress-animation 5s infinite;
      }
-
+    /* Aqui a animação da barra de progresso e 0 a 100*/
      @keyframes progress-animation{
              0% { width: 0%; } 
             100% { width: 100%}
      }
+
+    .container2{
+         height: 100px;
+        }
 
 </style>
 <!-- AQUI FINALIZAMOS A ESTILIZAÇÃO CSS -->
@@ -160,18 +216,31 @@
 <body>
 </div> 
 <!-- Adicionado o cabeçalho da página -->
-    <h2>Barra de Progresso  Circular GeeksforGeeks</h2>
+    <h2>Barra de Progresso  Circular</h2>
   
 <br>
 <br>
 
 <!-- AQUI CRIANDO OS CONTAINERS  DAS
         BARRAS DE PROGRESSO CIRCULAR -->
+<h6> Foram elaboradas as barras de progresso circular 
+           com o intuíto de criar uma fonte de pesquisa para 
+            fins educativos, de forma a proporcionar o entendimento de como construir
+            um código com posicionamentos dos elementos e efeitos em HTML e CSS.<br><br>
 
+           Após a apresentação, observe que existe, a seguir,  uma lista de siglas e orientações sobre                    requisitos e atividades  voltadas a área de TI,  para que possa 
+          elaborar fazendo uma triagem dentro de suas áreas de 
+            conhecimento r as classificações dos skills a serem
+            informados.
+              </h6>
+
+<br><br>
+            
 <!-- Criação de uma classe container 
                que armazenar outras classes úteis -->
-    <div class="container">
-<br>  
+<div class="container">
+<br><br><br>  
+
 <!-- Criando classes de ui-widgets que
                  armazenar outras classes úteis
                  como ui-values e ui-labels 
@@ -200,26 +269,693 @@
             <div class="ui-labels">C#</div>
            </div>
 
-
-
        <!-- child(5) -->
          <div class="ui-widgets" id="child5">
             <div class="ui-values">100%</div>
             <div class="ui-labels">CSS</div>
            </div>
 
+       <!-- child(6) -->
+         <div class="ui-widgets" id="child6">
+            <div class="ui-values">80%</div>
+            <div class="ui-labels">Big Data</div>
+           </div>
+
+       <!-- child(7) -->
+         <div class="ui-widgets" id="child7">
+            <div class="ui-values">80%</div>
+            <div class="ui-labels">MySQL</div>
+           </div>
+
+       <!-- child(8) -->
+         <div class="ui-widgets" id="child8">
+            <div class="ui-values">100%</div>
+            <div class="ui-labels">Gestão TI</div>
+           </div>
+
+       <!-- child(9) -->
+         <div class="ui-widgets" id="child9">
+            <div class="ui-values">80%</div>
+            <div class="ui-labels">I & 0</div>
+           </div>
+
 <!-- AQUI CRIANDO  UMA BARRA DE PROGRESSO-->
 <div class="container">
-    <div class="progress-bar"></div>
+         <div class="progress-bar">
+        </div>
 </div>
-<br><br>
-    <footer><small ><h5>© Elaborado por  IRAÊ CÉSAR BRANDÃO baeando-se em pesquisas 
+<br><br><br><br>
+
+
+
+<div class="container2">
+<span>
+          <div>
+                <h1>Significados dos principais termos e SIGLAS da TI <hr>
+              <br>
+  <a href="TEMPLATE_TXT.txt"   target="_blank"><h4>Veja o template do Código</h4></a>
+            Siglas sobre as atividades de TI (Tecnologia da Informação), que 
+            poderão sere descritas nos SKILLS do seu curriculo. </h1> 
+
+<h6>
+ A área de tecnologia é cheia de termos e siglas da TI que, às vezes, confundem os usuários e até os profissionais com experiência no assunto. Temos de ter conhecimento de cada um deles, mas para quem ainda não está familiarizado ,essas palavras podem causar uma certa confusão. 
+</h6>
 <br>
-     <a href="https://luckwayinformatica.business.site"  target="_blank">Luck Way Informática</a>
+<h1>Confira um dicionário com os principais termos e siglas da TI!</h1>
+<hr>
+
+<h1>ABR</h1>
+<h6>
+A ABR (available bit rate – taxa de bit disponível) é a quantidade média de dados transferidos por unidade de tempo. Por exemplo: um arquivo que possui uma taxa de bit disponível de 256kbit/s transfere, em média, 256.000 bits a cada segundo.
+</h6>
+<hr>
+<h1>ADVANCED ANALYTICS</h1>
+<h6>
+O Gartner define plataformas de Advanced Analytics como capazes de proporcionar um ambiente end-to-end para desenvolver e implementar modelos. Estas plataformas devem incluir: (1) acesso aos dados a partir de múltiplas fontes; (2) preparação de dados, exploração, e visualização; (3) a capacidade de implantar modelos e integrá-los nos processos de negócios e aplicações; (4) capacidades performáticas da plataforma, do projeto e do modelo de gestão; e de (5) alta escalabilidade de desempenho tanto para o desenvolvimento e implantação.
+</h6>
+<hr>
+
+<h1>ANSI</h1>
+<h6>
+American national standard institute – instituto nacional americano de padrões.
+</h6>
+<hr>
+
+<h1>APACHE TOMCAT</h1>
+<h6>
+O Tomcat é um servidor web Java, mais especificamente, um container de servlets.
+</h6>
+<hr>
+
+<h1>APP</h1>
+<h6>
+A sigla pode ter vários significados, porém no universo computacional, APP é a abreviação de application ou aplicativo. Trata-se de um programa desenvolvido para executar uma função específica, basicamente para o usuário.
+</h6>
+<hr>
+
+<h1>ARDUÍNO</h1>
+<h6>
+Arduíno é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um microcontrolador com suporte de entrada/saída embutido, uma linguagem de programação padrão, a qual tem origem em wiring (plataforma de prototipagem eletrônica de hardware livre), e é essencialmente C/C++. O objetivo do projeto é criar ferramentas que são acessíveis, com baixo custo, flexíveis e fáceis de se usar por artistas e amadores. Principalmente para aqueles que não teriam alcance aos controladores mais sofisticados e de ferramentas mais complicadas.
+</h6>
+<hr>
+
+<h1>ARPANET</h1>
+<h6>
+A ARPAnet (advanced research projects agency network) é a primeira rede de computadores à base de comutação de pacotes. Criada em 1969 pelo departamento de defesa dos EUA para interligar bases militares e departamentos de pesquisa do governo, deu origem à internet.
+</h6>
+<hr>
+
+<h1>ASCII</h1>
+<h6>
+O ASCII (american standard code for information interchange – código americano padronizado de intercâmbio de informações) é o conjunto internacional de caracteres com valores decimais que o computador pode produzir. Por exemplo: TAB=9, espaço=32, Letra A=65, letra a=97, número 0=48.
+</h6>
+<hr>
+
+<h1>AWS</h1>
+<h6>
+A Amazon Web Services (AWS) é uma plataforma de serviços em nuvem segura, oferecendo poder computacional, armazenamento de banco de dados, distribuição de conteúdo e outras funcionalidades para ajudar as empresas em seu dimensionamento e crescimento.
+</h6>
+<hr>
+
+<h1>B2B</h1>
+<h6>
+B2B (business to business) é a expressão utilizada para indicar operações entre empresas. A natureza dessa operação pode ser revenda, transformação ou consumo.
+</h6>
+<hr>
+
+<h1>B2C</h1>
+<h6>
+O B2C (business to customer) é a expressão utilizada para indicar operações entre empresa e consumidor final.
+</h6>
+<hr>
+
+<h1>BACKBONE</h1>
+<h6>
+O backbone é a rede principal por onde circulam todos os dados de todos os clientes da internet.
+</h6>
+<hr>
+
+<h1>BACKUP</h1>
+<h6>
+O backup é a cópia de dados de um dispositivo de armazenamento a outro para que possam ser restaurados em caso da perda dos dados originais, o que pode envolver apagamentos acidentais ou corrupção de dados.
+</h6>
+<hr>
+
+<h1>BAM</h1>
+<h6>
+O BAM (business activity management – monitoramento das atividades de negócio) é o termo que define como podemos fornecer acesso em tempo real aos indicadores críticos de desempenho de negócios para aumentar a velocidade e a eficácia das operações de negócios. Ao contrário de monitoramento em tempo real tradicional, o BAM vai buscar a informação em múltiplos sistemas de aplicação e também em outras fontes internas e externas, permitindo uma visão mais ampla e mais rica das atividades empresariais.
+</h6>
+<hr>
+
+<h1>BBS</h1>
+<h6>
+O BBS (bulletin board system) é um ambiente virtual formado por computadores, modems e um software de comunicação ligados a uma ou mais linhas telefônicas. A partir de uma configuração básica feita com scripts e arquivos de texto, é possível criar seu próprio sistema e conectá-lo a outros por meio de uma rede telefônica usando um modem.
+</h6>
+<hr>
+
+<h1>BDE</h1>
+<h6>
+O BDE (borland database engine) é um mecanismo de acesso a banco de dados desenvolvido pela Borland, amplamente testado por ser usado no mundo inteiro.
+</h6>
+<hr>
+
+<h1>BIG DATA</h1>
+<h6>
+Big Data é um termo amplamente utilizado na atualidade para nomear conjuntos de dados muito grandes ou complexos, que os aplicativos de processamento de dados tradicionais ainda não conseguem lidar. Os desafios desta área incluem: análise, captura, curadoria de dados, pesquisa, compartilhamento, armazenamento, transferência, visualização e informações sobre privacidade dos dados.
+</h6>
+<hr>
+
+
+<h1>BI</h1>
+<h6>
+O Business Intelligence (BI) é um software para visualização de indicadores de negócios. Possibilita o tratamento de dados complexos para criar visões simplificadas.
+</h6>
+<hr>
+
+
+<h1>BOTNET</h1>
+<h6>
+Um botnet é uma coleção de programas conectados à internet que comunicam-se com outros programas similares, a fim de executar tarefas. Também é uma coleção de agentes de software ou bots que executam autonomamente e automaticamente. O termo é geralmente associado com o uso de software malicioso, mas também pode se referir a uma rede de computadores, utilizando software de computação distribuída.
+</h6>
+<hr>
+
+<h1>BPM</h1>
+<h6>
+O BPM (business process management – gerenciamento de processos de negócio) é uma gestão de processos de negócio. Essa gestão é feita através de uma visão sistêmica e geral da organização e é baseada na definição de parâmetros, monitoramento, controle e adaptação para melhoria contínua dos processos. A automação dos processos também é um objetivo do uso do BPM.
+</h6>
+<hr>
+
+<h1>BPMN</h1>
+<h6>
+O business process model notation ou notação de modelagem de processos de negócio é um registro desenvolvido para definir e gerenciar processos na esfera de negócios. A principal funcionalidade é facilitar a o entendimento do BPM.
+</h6>
+<hr>
+
+
+<h1>BYOD</h1>
+<h6>
+O BYOD (bring your own device – traga seu próprio dispositivo) é a possibilidade de utilizar dispositivos pessoais como smartphones, tablets ou notebooks no local de trabalho para uso e conectividade com a rede corporativa. O BYOD proporcionou um aumento na produtividade nas empresas, pois os colaboradores podem utilizar seus próprios equipamentos, tornando-os mais independentes e dispostos a trabalhar.
+</h6>
+<hr>
+
+
+<h1>CAPEX e OPEX</h1>
+<h6>
+<h1>- CAPEX</h1> <h6>(capital expenditure – despesas de capital) designa o montante de dinheiro despendido na aquisição (ou introdução de melhorias) de bens de capital de uma determinada empresa.</h6>
+
+<h1>- PEX </h1><h6> (operational expenditure) é o capital utilizado para manter ou melhorar os bens físicos de uma empresa, tais como equipamentos, propriedades e imóveis. As despesas operacionais são os preços contínuos para dirigir um produto, o negócio, ou o sistema.
+</h6>
+<hr>
+
+<h1>CATÁLOGO DE SERVIÇOS</h1>
+<h6>
+O Catálogo de Serviço traz uma visão clara de quais serviços a TI oferece e como a TI agrega valor para os recursos financeiros alocados. Oferece um método para requisitar ou pedir os serviços publicados, viabilizando a boa governança em que os principais termos, condições e controles definidos nele estejam integrados aos processos de prestação de serviço da organização. Também permite que a organização melhore o planejamento, a entrega e o suporte aos serviços, enquanto avalia de forma correta os custos e preços do serviço.
+</h6>
+<hr>
+
+<h1>CEM</h1>
+<h6>
+CEM (customer experience management – gerenciamento da experiência do usuário) é a percepção da interação entre uma empresa e um consumidor através da visão do próprio cliente. Pode-se dizer que o CEM é uma experiência do consumidor através de interações com a marca durante o processo de compra.<br>
+
+Com o objetivo de agregar alto valor tecnológico ao ambiente de negócios, a OpServices desenvolveu o OpCEM software de criação e edição de robôs que simulam a experiência do usuário. Através de um usuário virtual, a solução é conﬁgurada para fazer todo o caminho necessário para realizar uma atividade como, por exemplo: fazer o login em uma área restrita, realizar um cadastro, fazer uma compra em uma loja virtual, etc. Saiba mais sobre o OpCEM acessando a página do produto:
+</h6>
+<hr>
+
+<h1>CI ou IC</h1>
+<h6>
+Configuration item ou item de configuração é um dispositivo que pode ser configurado com o objetivo de se entregar a um serviço de TI. Por exemplo: servidor, roteador, switch, access point, entre outros.
+</h6>
+<hr>
+
+<h1>CIA ou AIC</h1>
+<h6>
+Os configuration item attribute ou atributos de item de configuração são métricas e indicadores monitorados dentro dos CIs ou ICs. Por exemplo: no monitoramento de um servidor (IC) temos alguns indicadores (AIC) que podem ser monitorados como: CPU, memória, disco, entre outros.
+</h6>
+<hr>
+
+<h1>C-LEVELS.</h1>
+<h6>
+ Essa é uma das siglas da TI mais interessantes. Entenda:
+As nomenclaturas representam o chamado ‘nível C’. O significado completo é “Chief ______ Officer”, com o espaço em branco representando a área da empresa que a pessoa chefia:</h6>
+
+<h1>- CEO </h1><h6>(chief executive officer) – Presidente-executivo ou diretor geral.</h6>
+<h1>- CFO</h1><h6>(chief financial officer) – Diretor financeiro.</h6>
+<h1>- COO</h1><h6> (chief operation officer) – Diretor operacional.</h6>
+<h1>- CMO</h1><h6> (chief marketing officer) – Diretor de marketing.</h6>
+<h1>- CPO</h1><h6>(chief product officer) – Diretor de produto.</h6>
+<h1>- CTO</h1><h6>(chief technology officer) – Diretor de tecnologia.</h6>
+<h1>- CIO</h1> <h6>(chief information officer) – Diretor de TI.</h6>
+<h1>- CAO</h1><h6> (chief accounting officer) – Diretor de contabilidade.</h6>
+<h1>- CBO</h1><h6> (chief business officer) – Diretor de negócios.</h6>
+<h1>- CCO</h1><h6> (chief commercial officer) – Diretor comercial.</h6>
+<h1>- CCO</h1> <h6>(chief communications officer) – Diretor de comunicações.</h6>
+<h1>- CCO</h1> <h6>(chief creative officer) – Diretor de criação.</h6>
+<h1>- CCO</h1> <h6>(chief content officer) – Diretor de conteúdo.</h6>
+<h1>- CDO</h1> <h6>(chief digital officer) – Diretor digital.</h6>
+<h1>- CDO</h1> <h6>(chief diversity officer) – Diretor de diversidade.</h6>
+<h1>- CDO</h1><h6> (chief design officer) – Diretor de design.</h6>
+<h1>- CHRO</h1><h6> (chief human resources officer) – Diretor de recursos humanos.</h6>
+<h1>- CLO</h1> <h6>(chief legal officer) – Diretor jurídico.</h6>
+<h1>- CSO</h1> <h6>(chief science officer) – Diretor científico.</h6>
+<h/6>
+<hr>
+
+
+<h1>CLOUD COMPUTING</h1>
+<h6>
+O cloud computing (computação em nuvem) refere-se à utilização da memória e da capacidade de armazenamento e cálculo de computadores e servidores compartilhados e interligados por meio da internet, seguindo o princípio da computação em grade. Saiba mais sobre cloud computing acessando nosso blog.
+<h/6>
+<hr>
+
+<h1>CLUSTER</h1>
+<h6>
+Um cluster consiste em computadores vagamente ou fortemente ligados que trabalham em conjunto para que, em muitos aspectos, eles possam ser vistos como um único sistema.
+<h/6>
+<hr>
+
+<h1>CMDB ou BDGC</h1>
+<h6>
+O CMBD (configuration management database – banco de dados do gerenciamento de configuração, ou BDGC) é um repositório de informações relacionadas a todos os itens de configuração na infraestrutura de TI. O CMDB é um componente fundamental do processo de gerenciamento de configuração do ITIL. O CMDB é a fonte confiável de informação sobre configuração de todo e qualquer componente do ambiente de TI, incluindo servidores, roteadores, desktops, impressoras, telefones, softwares, etc.
+<h/6>
+<hr>
+
+<h1>COBOL</h1>
+<h6>
+O COBOL (COmmon Business Oriented Language – linguagem comum orientada para negócios) é uma antiga linguagem de programação orientada para o processamento de banco de dados comerciais.
+<h/6>
+<hr>
+
+<h1>COBIT</h1>
+<h6>
+O COBIT (control objectives for information and related technology) auxilia a empresa a ter uma governança de TI mais controlada. É focado no negócio e tem por finalidade fornecer aos gestores um modelo de governança que ajude a entregar valor a TI e também a gerenciar de forma mais clara os riscos associados a área.
+<h/6>
+<hr>
+
+<h1>CRM</h1>
+<h6>
+O CRM (customer relationship management – gerenciamento do relacionamento com o cliente) é um sistema integrado de gestão com foco no cliente, que reune vários processos e tarefas de uma forma organizada e integrada.
+<h/6>
+<hr>
+
+<h1>DATACENTER (DC) ou CPD</h1>
+<h6>
+O datacenter (DC) ou CPD (centro de processamento de dados) é um ambiente projetado para abrigar servidores e outros componentes como sistemas de armazenamento de dados e ativos de rede.
+<h/6>
+<hr>
+
+<h1>DBMS ou SGBD</h1>
+<h6>
+DBMS é a sigla para data base management system, em português a sigla é SGBD (sistema de gerenciamento de banco de dados).
+<h/6>
+<hr>
+
+<h1>DASHBOARDS</h1>
+<h6>
+Os dashboards são painéis visuais que centralizam informações importantes para os negócios. Permitem, desta forma, entender o cenário em tempo real e tomar decisões baseadas em informações reais e que estão ocorrendo agora, monitoradas minuto a minuto.
+<h/6>
+<hr>
+
+
+<h1>DEVOPS</h1>
+<h6>
+Derivada da junção entre Desenvolvedor e Operações, DevOps é uma metodologia de desenvolvimento de software que busca maximizar os resultados das equipes de TI. A metodologia integra toda a equipe de colaboradores e torna mais eficiente a comunicação entre eles, elevando o desenvolvimento de software e as equipes de TI a um novo patamar. As empresas que possuem as suas equipes de TI têm essas equipes compostas por profissionais especializados em diversas tecnologias, linguagens e operação em sistemas, que vão do RH ao financeiro, passando por todos os setores chaves da empresa.
+<h/6>
+<hr>
+
+<h1>DHTML</h1>
+<h6>
+O DHTML é uma união de tecnologias HTML, JavaScript e CSS, aliadas a um Modelo de Objeto de Documentos (DOM), que permitem a interatividade e animação de websites modificando a dinâmica na própria máquina, sem a necessidade de acessos a um servidor web.
+<h/6>
+<hr>
+
+
+<h1>DOWNTIME</h1>
+<h6>
+O downtime é o tempo que o sistema não está operacional. Saiba como calcular o custo de um downtime.
+<h/6>
+<hr>
+
+<h1>DNS</h1>
+<h6>
+DNS (domain name system – sistema de nomes e domínios) é um sistema que gerencia nomes e reconhece seus números de IP para fazer uma conexão. Devido ao DNS pode-se, por exemplo, digitar na barra de endereços do navegador ’www.opservices.com.br’ para acessar o site ao invés de um monte de números e pontos.
+<h/6>
+<hr>
+
+
+<h1>ELASTIC SEARCH</h1>
+<h6>
+O elasticsearch é uma ferramenta para buscas de código aberto (opensource) que tem capacidade para tratar de grandes quantidades de dados em tempo real. O servidor de buscas distribuído é baseado em Apache Lucene e desenvolvido em Java, utilizando uma interface comum, JSON sobre https. Entre as principais vantagens da engine de pesquisa full-text estão a disponibilidade de dados em tempo real (near-realtime), a alta disponibilidade para tratar grandes volumes de dados e armazenamento de dados em forma de documentos.
+<h/6>
+<hr>
+
+
+<h1>ERP</h1>
+<h6>
+O ERP (enterprise resource planning – planejamento de recursos da empresa) é um sistema de gestão empresarial. Sua função é unificar os sistemas de diversas áreas da empresa, por exemplo, ao invés de cada área utilizar um sistema diferente de gerenciamento de suas atividades, uma solução de ERP é capaz de unificar estas informações, tornando os departamentos integrados.
+<h/6>
+<hr>
+
+
+
+<h1>FIREWALL</h1>
+<h6>
+O firewall é um dispositivo de uma rede de computadores que tem por objetivo aplicar uma política de segurança a um determinado ponto da rede.
+<h/6>
+<hr>
+
+
+<h1>FAQ</h1>
+<h6>
+FAQ (frequently asked questions) é a lista de perguntas e respostas mais frequentes feitas pelos internautas.
+<h/6>
+<hr>
+
+
+<h1>FTE</h1>
+<h6>
+O FTE (full-time equivalent – equivalente a tempo completo) é um método de mensuração do grau de envolvimento de um colaborador nas atividades de uma organização ou unicamente em um determinado projeto.
+<h/6>
+<hr>
+
+<h1>FTP</h1>
+<h6>
+O FTP (file transfer protocol – protocolo de transferência de arquivos) é uma forma rápida e simples de transferência de arquivos na internet. Pode representar tanto o computador que transfere o arquivo quanto o servidor FTP.
+<h/6>
+<hr>
+
+<h1>GATEWAY</h1>
+<h6>
+Computador que interliga duas ou mais redes que usem protocolos de comunicação internos diferentes.
+<h/6>
+<hr>
+
+<h1>HOTSPOT</h1>
+<h6>
+Hotspot é o nome dado ao local onde a tecnologia wi-fi está disponível. São encontrados geralmente em locais públicos como cafés, restaurantes, hotéis e aeroportos onde é possível conectar-se à internet utilizando qualquer dispositivo que esteja preparado para se comunicar em uma rede sem fio do tipo wi-fi.
+<h/6>
+<hr>
+
+<h1>HTML</h1>
+
+O HMTL (hyper text markup language) é a linguagem de marcação mais popular na internet.
+<h6>
+-http:
+O http (hypertext transfer protocol – protocolo de transferência de hipertexto) é um protocolo de comunicação que decide como dois computadores ou programas transmitirão dados na Internet. 
+
+-https:
+O https (hypertext transfer protocol secure – protocolo seguro de transferência de hipertexto ) é uma implementação do protocolo https sobre uma camada adicional de segurança que utiliza o protocolo SSL/TLS (protocolos de segurança que protegem as telecomunicações via internet para serviços de transferência de dados.). Essa camada adicional permite que os dados sejam transmitidos por meio de uma conexão criptografada e que se verifique a autenticidade do servidor e do cliente por meio de certificados digitais.
+<h/6>
+<hr>
+
+<h1>IAAS</h1>
+<h6>
+IaaS (infrastructure as a service – infraestrutura como serviço) é uma modalidade onde o cliente contrata a infraestrutura como serviço, ou seja, contrata servidores virtuais ao invés de servidores físicos.
+<h/6>
+<hr>
+
+
+<h1>INTRANET</h1>
+<h6>
+A intranet é a rede interna de computadores de uma empresa.
+<h/6>
+<hr>
+
+
+<h1>I&O</h1>
+<h6>
+O termo I&O (infrastructure & operations) designa os profissionais das áreas de infraestrutura e operações.
+<h/6>
+<hr>
+
+
+<h1>IOBVD</h1>
+<h6>
+IOBVD (infrastructure & operations business value dashboards). Diferentemente dos sistemas tradicionais utilizados pelos profissionais de TI e I&O, que se concentram apenas em exibir resultados operacionais, o IOBVD consegue cruzar essas informações com dados financeiros, comerciais, logísticos e de diferentes áreas e apresentar um resultado que indique, por exemplo, qual foi o impacto no faturamento gerado pela indisponibilidade de uma determinada aplicação. Ou, em uma visão orientada à vendas, a partir de uma queda nos resultados das vendas online descobrir se a causa-raiz deste problema está na diminuição da demanda ou é originada de um problema na operação ou de infraestrutura de TI.
+<h/6>
+<hr>
+
+
+<h1>IOT</h1>
+<h6>
+Internet of things (IOT) ou internet das coisas é o termo utilizado para a conexão de basicamente qualquer coisa à internet, seja ela um eletrodoméstico, dispositivo, tênis, enfim, qualquer coisa.
+<h/6>
+<hr>
+
+
+<h1>ITIL</h1>
+<h6>
+ITIL (information technology infrastructure library – biblioteca de infraestrutura de TI) é um conjunto de melhores práticas para gerenciar os serviços de TI.
+<h/6>
+<hr>
+
+
+
+<h1>JAVA</h1>
+<h6>
+Java é uma linguagem de programação interpretada orientada a objetos. Diferente das linguagens de programação convencionais, que são compiladas para código nativo, é compilada para um bytecode (código de um programa escrito na linguagem Java) que é executado por uma máquina virtual (JVMs).
+<h/6>
+<hr>
+
+
+<h1>JBOSS</h1>
+<h6>
+JBoss é um servidor de aplicação de código fonte aberto baseado na plataforma JEE (Java Enterprise Edition) e implementado completamente na linguagem de programação Java.
+<h/6>
+<hr>
+
+
+<h1>LAN</h1>
+<h6>
+A LAN (local area network – rede de área local) é uma rede local que tem por finalidade a troca de dados dentro de um mesmo espaço físico. O limitador da rede LAN é uma faixa de IP restrita à mesma, com uma máscara de rede comum.
+<h/6>
+<hr>
+
+
+<h1>LAAS</h1>
+<h6>
+LaaS (license as a service – licença como serviço) é uma modalidade de comercialização onde o cliente adquire em definitivo as licenças de determinado software.
+<h/6>
+<hr>
+
+
+
+
+<h1>M2M</h1>
+<h6>
+O M2M (machine to machine – máquina à máquina) é a tecnologia que permite que qualquer objeto transmita dados através de um sensor. Esse sensor captura dados como geolocalização, temperatura, e outros, e os envia por meio de uma rede a um software.
+<h/6>
+<hr>
+
+<h1>MAINFRAME</h1>
+<h6>
+É um computador de grande porte, com foco no processamento de um grande volume de informações.
+<h/6>
+<hr>
+
+<h1>MARIADB</h1>
+<h6>
+O MariaDB é um banco de dados ramificado do MySQL. Após a aquisição do MySQL pela Oracle o seu desenvolvedor criou o MariaDB para manter a alta fidelidade ao MySQL.
+<h/6>
+<hr>
+
+<h1>MySQL</h1>
+<h6>
+O MySQL é um SGBD (sistema de gestão de banco de dados) que utiliza a linguagem SQL como interface.
+<h/6>
+<hr>
+
+<h1>MS SQL</h1>
+<h6>
+O Microsoft SQL Server é um SGDB desenvolvido pela Microsoft. Sua principal função é a de armazenar e recuperar dados solicitados por outras aplicações de software, sejam aqueles no mesmo computador ou aqueles em execução em outro computador através de uma rede (incluindo a Internet).
+<h/6>
+<hr>
+
+<h1>MTTR e MTBF</h1>
+
+<h1>-MTTR</h1><h6> (mean time to repair – tempo médio para reparo) é a média de tempo que se leva para executar um reparo após a ocorrência da falha. Ou seja, é o tempo gasto durante a intervenção em um determinado processo.</h6>
+
+<h1>-MTBF</h1><h6> (mean time between failures – tempo médio entre falhas) é uma métrica que diz respeito à média de tempo decorrido entre uma falha e a próxima vez que ela ocorrerá.
+<h/6>
+<hr>
+
+<h1>NETFLOW</h1>
+<h6>
+A partir de sua instalação no roteador Cisco, o NetFlow passa a identificar os pacotes de dados não mais isoladamente, como outras tecnologias, mas como fluxos com início, meio e fim. Quando os fluxos são identificados, eles são armazenados no NetFlow Cache para caracterização e compreensão do tráfego da rede. Após 30 minutos são apagados da memória.
+<h/6>
+<hr>
+
+<h1>NFC</h1>
+<h6>
+A NFC foi criada por meio de um consórcio de gigantes da tecnologia: LG, Motorola, Samsung, Huawei, HTC, Google, Visa, Microsoft e Intel. Então, os celulares compatíveis com essa tecnologia possuem um chip na parte traseira do aparelho que estabelece a comunicação com outros aparelhos que possuem um chip equipado com a NFC.<br>
+A NFC permite conexões rápidas em uma curta distância. Por isso, a transmissão de arquivos grandes não é ainda o objetivo dessa tecnologia. Essa tecnologia é baseada em uma já bastante difundida pelo mundo, a RFID (radio frequency identification – identificação por radiofrequência).
+<h/6>
+<hr>
+
+<h1>ORACLE</h1>
+<h6>
+O Oracle é um SGBD (sistema de gestão de banco de dados) escrito em linguagem C e disponível em diversas plataformas materiais.
+<h/6>
+<hr>
+
+<h1>P2P</h1>
+<h6>
+O P2P (peer to peer – ponto a ponto ou par a par) é uma arquitetura de redes de computadores em que cada um dos pontos ou nós da rede funciona, tanto como cliente quanto como servidor. Assim, permitindo compartilhamentos de serviços e dados sem a necessidade de um servidor central.
+<h/6>
+<hr>
+
+<h1>PDF</h1>
+<h6>
+PDF (portable document format) significa formato de documento portátil.
+<h/6>
+<hr>
+
+
+<h1>QUERY</h1>
+<h6>
+Query é o processo de extração de dados de um banco de dados e sua apresentação em uma forma adequada ao uso.
+<h/6>
+<hr>
+
+
+<h1>ROI</h1>
+<h6>
+O ROI (return on investment – retorno sobre o investimento) é a mensuração do tempo necessário para retornar o valor investido na aquisição de novas soluções tecnológicas.
+<h/6>
+<hr>
+
+<h1>SAAS</h1>
+<h6>
+SaaS (software as a service – software como serviço) é uma forma de comercialização de software onde o fornecedor se responsabiliza por toda a estrutura necessária para a disponibilização do sistema.
+<h/6>
+<hr>
+
+
+<h1>SFLOW</h1>
+<h6>
+O sFlow é uma simplificação do protocolo NetFlow. Sendo também um protocolo e possui o conceito de Probe (agente projetado para coletar informações diretamente de uma rede) e Collector (servidor central que recolhe os datagramas de todos os agentes para armazenar e analisar).
+<h/6>
+<hr>
+
+<h1>SCM</h1>
+<h6>
+O SCM (supply chain management – gerenciamento da cadeia de suprimentos) é uma solução que possibilita à empresa gerenciar a cadeia de suprimentos com maior eficácia e eficiência. Consiste basicamente em todas as partes relacionadas, direta ou indiretamente, na execução do pedido do cliente.
+<h/6>
+<hr>
+
+
+<h1>SQL</h1>
+<h6>
+SQL (structured query language – linguagem de consulta estruturada) é a linguagem de pesquisa declarativa padrão para banco de dados relacional.
+<h/6>
+<hr>
+
+<h1>SLA</h1>
+<h6>
+Fundamental para qualquer contrato de prestação de serviços na área de TI, o SLA (Service Level Agreement – acordo de nível de serviço, ou ANS) é a especificação, em termos mensuráveis e claros, de todos os serviços que o contratante pode esperar do contratado na relação contratual, bem como termos de compromisso, metas de nível de serviço, suporte técnico, prazos contratuais, dentre outros aspectos. Em outras palavras, é um esclarecimento técnico do contrato.<br>
+
+É importante deixar claro que o SLA é um documento exigido em qualquer relação contratual de TI, sendo descrito na ABNT (associação brasileiras de normas técnicas) NBR ISO-IEC 20000-1, e que deve ser revisto periodicamente para que tenha maior efetividade. É apenas com a revisão feita continuamente que o contratante pode ter a garantia de que a empresa de TI oferecerá suporte em todas as etapas do processo que, evidentemente, requerem cuidados e serviços diferenciados.
+<h/6>
+<hr>
+
+<h1>STACK</h1>
+<h6>
+O stack ou empilhamento consiste em dois ou mais switches com o objetivo de gerenciar a rede através de um único endereço IP.
+<h/6>
+<hr>
+
+
+<h1>TCO</h1>
+<h6>
+O TCO (total cost of ownership – custo total da posse) é a estimativa financeira sobre os custos diretos e indiretos relacionados à aquisição de um software ou hardware, além dos custos envolvidos para mantê-los funcionando depois de adquirido.
+<h/6>
+<hr>
+
+<h1>TCP/IP</h1>
+<h6>
+O TCP/IP é um conjunto de protocolos de comunicação entre computadores em rede. Seu nome vem de dois protocolos: o TCP (transmission control protocol – protocolo de controle de transmissão) e o IP (internet protocol – protocolo de internet). O conjunto de protocolos pode ser visto como um modelo de camadas, onde cada camada é responsável por um grupo de tarefas, fornecendo um conjunto de serviços bem definidos para o protocolo da camada superior.
+<h/6>
+<hr>
+
+<h1>TI e TIC</h1>
+<h6>
+TI (tecnologia da informação) e TIC (tecnologia da informação e comunicação) correspondem a um conjunto de recursos tecnológicos integrados entre si. O TIC consiste em todos os meios técnicos usados para tratar a informação e auxiliar na comunicação, o que inclui hardware e software.
+<h/6>
+<hr>
+
+
+<h1>UX</h1>
+<h6>
+Também conhecido como user experience ou experiência do usuário, é a preocupação dos designers e desenvolvedores em criar aplicações pensadas na visão e utilização de seus usuários.
+<h/6>
+<hr>
+
+
+<h1>VM</h1>
+<h6>
+A VM (virtual machine – máquina virtual) consiste em um software de ambiente computacional, que executa programas como um computador real, também chamado de processo de virtualização.
+<h/6>
+<hr>
+
+
+<h1>VPN</h1>
+<h6>
+VPN (virtual private network – rede privada virtual) é uma rede de comunicação privada. Por fornecerem autenticação e confidencialidade na transmissão de dados, além de protocolos criptografados por tunelamento, as VPNs tornam-se mais seguras e confiáveis nas comunicações.
+<h/6>
+<hr>
+
+
+<h1>XML</h1>
+<h6>
+O XML (extensible markup language) é uma linguagem de marcação capaz de descrever diversos tipos de dados. É um dos subtipos da SGML (standard generalized markup language) e sua principal finalidade é facilitar o compartilhamento de informações através da internet. Uma das características fundamentais do XML é possibilitar a criação de uma infraestrutura única para diversas linguagens, facilitando a definição de linguagens desconhecidas.
+</h6>
+<hr>
+
+
+<h1>WAN</h1>
+<h6>
+A WAN (wide area network – rede de longa distância) é uma rede de computadores que cobre uma área extensa como uma universidade, cidade, estado ou até mesmo um país.
+<h/6>
+<hr>
+
+
+<h1>WEB</h1>
+<h6>
+WWW (world wide web) ou WEB é a sigla que denomina a rede mundial de computadores ligados em rede.
+<h/6>
+<hr>
+
+
+<h1>WEBNAR</h1>
+<h6>
+O webnar (ou webinar) é um tipo de conferência web no qual a comunicação é de uma via apenas, ou seja, somente uma pessoa se expressa e as outras assistem. A interação entre os participantes é limitada apenas ao chat, de modo que eles podem conversar entre si ou enviar perguntas ao palestrante.
+<h/6>
+<hr>
+
+
+<h1>WEBSPHERE</h1>
+<h6>
+WebSphere é o nome de uma família de softwares da IBM para criação e execução de aplicações baseadas no padrão Java J2EE. Além disso, fornece infraestrutura para integração de aplicações corporativas.
+     </h6>
+<hr>
+IMPORTANTE:  Existem inúmeras outras siglas, essas são apenas algumas delas.
+     <hr>
+  </div>
+</span>
+
+
+
+<!-- AQUI CRIANDO O FOOTER - RODAPÉ -->
+    <footer><small ><h7>© Elaborado por  IRAÊ CÉSAR BRANDÃO baseando-se em pesquisas 
+<br>
+     <a href="https://www.linkedin.com/in/irae-cesar-brandao-a2112b69"  target="_blank">Linkedin Iraê C. Brandão</a><br>
+
+     <a href="https://luckwayinformatica.business.site"  target="_blank">Luck Way Informática</a></h7>
 </small>
+<br><br><br><hr>
 </footer>
     </div>
 </div>
 </body>
+
 </html>
 
